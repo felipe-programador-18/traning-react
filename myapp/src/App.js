@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+
+
+const Texth1 = (props) =>{
+ return (
+    <h1>
+    {props.texto}
+    </h1>
+ )
+}
+
+const Parag = (props) => {
+  return(
+    <p>
+     {props.p}
+    </p>
+    
+  )
+}
+// remember i am passando referencia!!!
+
+const Button = (props) => <button>{props.text}</button>
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Texth1  texto='practice more react everyday always!!'/>
+    <Parag p='more and more' />
+    <Parag p='wants more teach react'/>
+    <Texth1 texto= '110+10'/>
+    <Parag p='finnaly react practice my day went weel!!' />
+    <Button text='+' />
+    <Button text='-' /> 
+    <br />
+    <Button text='Iniciar' />
+    <Button text='Reiniciar' /> 
     </div>
-  );
+
+    
+  )
+
 }
 
-export default App;
+
+export default App
+
