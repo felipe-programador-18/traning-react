@@ -30,6 +30,7 @@ function App() {
     <Parag p='wants more teach react'/>
     <Texth1 texto= '110+10'/>
     <Parag p='finnaly react practice my day went weel!!' />
+    <Parag p='Very happn learning everyday always!!' />
     <Button text='+' />
     <Button text='-' /> 
     <br />
