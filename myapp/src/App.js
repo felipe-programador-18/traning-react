@@ -1,37 +1,48 @@
 import React, {useState} from 'react'
 
 
-const Texth1 = (props) =>{
- return (
-    <h1>
-    {props.texto}
-    </h1>
- )
+
+const VoltaR = (props) => {
+  return (
+    <p>{props.volta}</p>
+  )
 }
+
+
+
 
 const Parag = (props) => {
   return(
     <p>
-     {props.p}
+     {props.p}  <br/>
+     voltas
+     
     </p>
+    
     
   )
 }
 // remember i am passando referencia!!!
 
-const Button = (props) => <button>{props.text}</button>
-
+const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
 
 function App() {
+  
+  const [Numvolta, setvolta] = useState(12)
+
+
+    const increment = ()=>{
+      setvolta(Numvolta+1)
+    }
+  
+  
   return (
+    
     <div>
-    <Texth1  texto='practice more react everyday always!!'/>
-    <Parag p='more and more' />
-    <Parag p='wants more teach react'/>
-    <Texth1 texto= '110+10'/>
-    <Parag p='finnaly react practice my day went weel!!' />
-    <Parag p='Very happn learning everyday always!!' />
-    <Button text='+' />
+
+    <VoltaR volta={Numvolta} />
+    <Parag text='voltas' />
+    <Button text='+' onClick = {increment} />
     <Button text='-' /> 
     <br />
     <Button text='Iniciar' />
