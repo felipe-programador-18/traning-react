@@ -18,10 +18,19 @@ const Parag = (props) => {
      voltas
      
     </p>
-    
-    
   )
 }
+
+const Seeing = (props) =>{
+  
+  return (
+    <p>
+    {props.paragrafo}   <br />
+  </p>
+  )
+}
+
+
 // remember i am passando referencia!!!
 
 const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
@@ -34,6 +43,10 @@ function App() {
     const increment = ()=>{
       setvolta(Numvolta+1)
     }
+
+    const decrement = () =>{
+      setvolta(Numvolta-1)
+    }
   
   
   return (
@@ -43,10 +56,14 @@ function App() {
     <VoltaR volta={Numvolta} />
     <Parag text='voltas' />
     <Button text='+' onClick = {increment} />
-    <Button text='-' /> 
+    <Button text='-' onClick={decrement} /> 
     <br />
     <Button text='Iniciar' />
     <Button text='Reiniciar' /> 
+
+
+    <Seeing paragrafo='thuoght about in that first of all' />
+    
     </div>
 
     
