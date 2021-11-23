@@ -1,25 +1,9 @@
 import React, {useState} from 'react'
+import './style.css'
+import VoltaR from './voltar'
+import Parag from './Parag'
 
 
-
-const VoltaR = (props) => {
-  return (
-    <p>{props.volta}</p>
-  )
-}
-
-
-
-
-const Parag = (props) => {
-  return(
-    <p>
-     {props.p}  <br/>
-     voltas
-     
-    </p>
-  )
-}
 
 const Seeing = (props) =>{
   
@@ -35,6 +19,17 @@ const Callehelle = () =>{
    alert('teste dom!!')
   )
 }
+
+const CallH2 =  (props) => {
+  return (<h2>
+    {props.paragrafo}
+    </h2>)
+    
+  
+}
+
+
+
 
 // remember i am passando referencia!!!
 
@@ -74,6 +69,9 @@ function App() {
     
     <Button onClick={Callehelle} text='alert'/>
     
+
+
+    <CallH2 paragrafo='READ AND PRACTICE QUITE REACT!!!' />
   
     
     </div>
