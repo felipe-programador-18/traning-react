@@ -30,10 +30,16 @@ const Seeing = (props) =>{
   )
 }
 
+const Callehelle = () =>{
+  return (
+   alert('teste dom!!')
+  )
+}
 
 // remember i am passando referencia!!!
 
 const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
+
 
 function App() {
   
@@ -47,7 +53,8 @@ function App() {
     const decrement = () =>{
       setvolta(Numvolta-1)
     }
-  
+      
+
   
   return (
     
@@ -63,6 +70,11 @@ function App() {
 
 
     <Seeing paragrafo='thuoght about in that first of all' />
+    <Seeing paragrafo='bidding your income' / >
+    
+    <Button onClick={Callehelle} text='alert'/>
+    
+  
     
     </div>
 
