@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './style.css'
 import VoltaR from './voltar'
 import Parag from './Parag'
-
+import Button from './Button'
 
 
 const Seeing = (props) =>{
@@ -29,11 +29,6 @@ const CallH2 =  (props) => {
 }
 
 
-
-
-// remember i am passando referencia!!!
-
-const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
 
 
 function App() {
