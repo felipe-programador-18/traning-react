@@ -34,6 +34,18 @@ const TestCont = (props) =>{
   )
 }
 
+// section test
+const Section = (props) => {
+  return(
+    
+    <option>
+    {props.core}
+    </option>
+    
+  )
+}
+
+
 
 //remember when i give an props i have remember of tag!!
 const CaughtH2 = (props) => {
@@ -48,9 +60,18 @@ const ChangeTest = (props) =>{
   )
 }
 
+const Wants = (props) =>{
+  return(
+    <p>{props.seeen}</p>
+  )
+}
+
+
 
 
 function App() {
+   
+  const [pegar , setpegar] = useState('')
   const [Change, setchange] = useState('text here')
 
   const [Numvolta, setvolta] = useState(12)
@@ -78,6 +99,10 @@ function App() {
    const mudanda = () => {
      setchange(Change +1)
    }
+    
+   const PegarChange = () =>{
+    setpegar(pegar+ {Section})
+ }
 
   
   return (
@@ -115,6 +140,16 @@ function App() {
 
     <Button onClick={aumenta} text='reporting' />
     <Button onClick={diminue} text ='reading' />
+
+
+    <select>
+    <Section core='audi'   />
+    <Section core='ferrari' />
+    <Section core='camaro' />
+    <Section core='renault' />
+   </select>
+
+    <Wants seeen ='vc selecionou :' onChange={e => setpegar(e.target.value)} />
 
     </div>
 
