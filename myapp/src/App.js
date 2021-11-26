@@ -60,18 +60,18 @@ const ChangeTest = (props) =>{
   )
 }
 
-const Wants = (props) =>{
-  return(
-    <p>{props.seeen}</p>
-  )
-}
+
 
 
 
 
 function App() {
-   
-  const [pegar , setpegar] = useState('')
+  
+  // caught values of input with onchange!!
+  const [value, setvalue] = useState('')
+
+  const [name, setname] = useState('')
+
   const [Change, setchange] = useState('text here')
 
   const [Numvolta, setvolta] = useState(12)
@@ -100,9 +100,7 @@ function App() {
      setchange(Change +1)
    }
     
-   const PegarChange = () =>{
-    setpegar(pegar+ {Section})
- }
+  
 
   
   return (
@@ -141,16 +139,16 @@ function App() {
     <Button onClick={aumenta} text='reporting' />
     <Button onClick={diminue} text ='reading' />
 
+   
 
-    <select>
-    <Section core='audi'   />
-    <Section core='ferrari' />
-    <Section core='camaro' />
-    <Section core='renault' />
-   </select>
+    <input type='text' value={value} onChange={e => setvalue(e.target.value)} />
+    <br></br>
+    {value}
 
-    <Wants seeen ='vc selecionou :' onChange={e => setpegar(e.target.value)} />
-
+    <br></br>
+    <input type='password' name={name} onChange = { e => setname(e.target.value)} />
+    {name}
+      
     </div>
 
     
