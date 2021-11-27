@@ -49,12 +49,34 @@ const ChangeTest = (props) =>{
 }
 
 
+//test to select opcoes of menu!!
+const Optimore = (props) =>{
+  return (
+   
+    <option>
+    {props.more}
+    </option>
+  )
+}
+
+
+const Messagese = (props) => {
+  return(
+    <p>
+    {props.message}
+    </p>
+  )
+}
 
 
 
 
 function App() {
-  
+  //try caught value in the onchange submenu 
+   const [seleciona, setseleciona] = useState('')
+
+
+
   // caught values of input with onchange!!
   const [value, setvalue] = useState('')
 
@@ -136,7 +158,21 @@ function App() {
     <br></br>
     <input type='password' name={name} onChange = { e => setname(e.target.value)} />
     {name}
-      
+
+
+
+
+
+    <select seleciona={seleciona} onChange={e=> setseleciona(e.target.value)}>
+    <Optimore  more='ferrari' />
+    <Optimore more='lamburgini' />
+    <Optimore more='renault' />
+    
+    </select>
+    
+    <Messagese  message={'you select brand :'+ seleciona} />
+  
+    
     </div>
 
     
