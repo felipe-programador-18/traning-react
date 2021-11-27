@@ -3,6 +3,7 @@ import './style.css'
 import VoltaR from './voltar'
 import Parag from './Parag'
 import Button from './Button'
+import Callehelle from './called'
 
 const Seeing = (props) =>{
   
@@ -13,11 +14,7 @@ const Seeing = (props) =>{
   )
 }
 
-const Callehelle = () =>{
-  return (
-   alert('teste dom!!')
-  )
-}
+
 
 const CallH2 =  (props) => {
   return (<h2>
@@ -34,16 +31,7 @@ const TestCont = (props) =>{
   )
 }
 
-// section test
-const Section = (props) => {
-  return(
-    
-    <option>
-    {props.core}
-    </option>
-    
-  )
-}
+
 
 
 
