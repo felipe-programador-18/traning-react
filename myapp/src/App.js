@@ -114,8 +114,11 @@ function App() {
     
 
    const Together = () => {
-     setadiciona(adiciona+1)
-   }
+     setadiciona(adiciona)
+     localStorage.setItem(adiciona, adiciona+1)
+     localStorage.getItem(adiciona, adiciona+1)
+
+    }
   
 
   
@@ -182,7 +185,7 @@ function App() {
 
     <input type='text'  onChange = { e => setadiciona(e.target.value)}/>
     
-    <Button text='click here' onClick={Together} adiciona= {adiciona} />
+    <Button text='click here' onClick={Together} />
     {adiciona}
     </div>
 
