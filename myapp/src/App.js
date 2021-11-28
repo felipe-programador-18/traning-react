@@ -173,6 +173,9 @@ function App() {
     <Messagese  message={'you select brand :'+ seleciona} />
   
     
+
+    <input type='text'></input>
+
     </div>
 
     
