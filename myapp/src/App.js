@@ -75,6 +75,8 @@ function App() {
   //try caught value in the onchange submenu 
    const [seleciona, setseleciona] = useState('')
 
+   // try another test about onclick
+   const [adiciona, setadiciona] = useState('')
 
 
   // caught values of input with onchange!!
@@ -110,6 +112,10 @@ function App() {
      setchange(Change +1)
    }
     
+
+   const Together = () => {
+     setadiciona(adiciona+1)
+   }
   
 
   
@@ -174,8 +180,10 @@ function App() {
   
     
 
-    <input type='text'></input>
-
+    <input type='text'  onChange = { e => setadiciona(e.target.value)}/>
+    
+    <Button text='click here' onClick={Together} adiciona= {adiciona} />
+    {adiciona}
     </div>
 
     
