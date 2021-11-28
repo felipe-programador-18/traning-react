@@ -72,6 +72,25 @@ const Messagese = (props) => {
 
 
 function App() {
+
+  //traning more and more this !!!  
+  // try localstorage now!!!
+  const [nome, setNome] = useState()
+
+  const Armazena = (chave, valor) =>{
+    localStorage.setItem(chave,valor)
+  }
+  
+  const Consulta = (chave) =>{
+    console.log(localStorage.getItem(chave))
+  }
+  
+  const Deleted =(chave) => {
+   localStorage.removeItem(chave)
+  }
+////////////////////////////////////////////////////
+
+
   //try caught value in the onchange submenu 
    const [seleciona, setseleciona] = useState('')
 
@@ -187,6 +206,21 @@ function App() {
     
     <Button text='click here' onClick={Together} />
     {adiciona}
+
+
+
+
+
+
+
+   <label> Write one name</label>
+   <input type='text'   value={nome}    onChange={(e)=> setNome(e.target.value)} /><br/>
+   <button onClick={()=> Armazena('ls_name', nome)}>Armazena </button>
+   <button  onClick={()=> Consulta('ls_name')}>Consulta </button>
+   <button onClick={()=> Deleted('ls_name')}>Deleted</button> 
+
+
+
     </div>
 
     
