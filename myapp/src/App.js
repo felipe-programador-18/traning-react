@@ -157,6 +157,7 @@ function App() {
     <Seeing paragrafo='thuoght about in that first of all' />
     <Seeing paragrafo='bidding your income' / >
     
+    <Seeing paragrafo='test more reasons for renting house for me!!' />
     <Button onClick={Callehelle} text='text of bottom!!'/>
     
     <Button onClick={Callehelle} text='text' />
