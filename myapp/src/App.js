@@ -154,7 +154,7 @@ function App() {
     <Button text='Reiniciar' /> 
 
 
-    <Seeing paragrafo='thuoght about in that first of all' />
+    <Seeing paragrafo='thuoght about in that first of all more and insight about' />
     <Seeing paragrafo='bidding your income' / >
     
     <Seeing paragrafo='test more reasons for renting house for me!!' />
