@@ -69,6 +69,15 @@ const Messagese = (props) => {
 }
 
 
+const AnotherPara = (props) =>{
+  return (
+    <p>
+    {props.means}
+    </p>
+  )
+}
+
+
 
 
 function App() {
@@ -220,6 +229,10 @@ function App() {
    <button  onClick={()=> Consulta('ls_name')}>Consulta </button>
    <button onClick={()=> Deleted('ls_name')}>Deleted</button> 
 
+
+
+
+   <AnotherPara means= 'thuoght about that practice react quite for dont forgot' />
 
 
     </div>
