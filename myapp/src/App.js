@@ -233,6 +233,7 @@ function App() {
 
 
    <AnotherPara means= 'thuoght about that practice react quite for dont forgot' />
+   <AnotherPara means= 'let me think, i think you can evolv more and more if ended net socias' />
 
 
     </div>
