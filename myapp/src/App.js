@@ -4,7 +4,7 @@ import VoltaR from './voltar'
 import Parag from './Parag'
 import Button from './Button'
 import Callehelle from './called'
-
+import Otheropt from './otheroption'
 const Seeing = (props) =>{
   
   return (
@@ -234,7 +234,15 @@ function App() {
 
    <AnotherPara means= 'thuoght about that practice react quite for dont forgot' />
    <AnotherPara means= 'let me think, i think you can evolv more and more if ended net socias' />
+ 
 
+
+
+   <select>
+   <Otheropt earn ='Nike' />
+   <Otheropt earn ='Adidas'/>
+   <Otheropt earn= 'Puma'/>
+   </select>
 
     </div>
 
