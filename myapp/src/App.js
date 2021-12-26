@@ -103,6 +103,9 @@ function App() {
   //try caught value in the onchange submenu 
    const [seleciona, setseleciona] = useState('')
 
+  //practice about caught anoter menu
+  const [pega, setpega] = useState('')
+
    // try another test about onclick
    const [adiciona, setadiciona] = useState('')
 
@@ -238,11 +241,13 @@ function App() {
 
 
 
-   <select>
+   <select pega ={pega} onChange={e=>setpega(e.target.value)}  >
    <Otheropt earn ='Nike' />
    <Otheropt earn ='Adidas'/>
    <Otheropt earn= 'Puma'/>
    </select>
+
+   <Messagese message={'you select is brand of sneakers:' + pega} />
 
     </div>
 
