@@ -248,6 +248,7 @@ function App() {
    </select>
 
    <Messagese message={'you select is brand of sneakers:' + pega} />
+   <Messagese message= {'i have thought about my life, i dont know your reasons and motivaties : ' +pega} />
 
     </div>
 
