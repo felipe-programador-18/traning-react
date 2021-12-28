@@ -245,6 +245,7 @@ function App() {
    <Otheropt earn ='Nike' />
    <Otheropt earn ='Adidas'/>
    <Otheropt earn= 'Puma'/>
+   <Otheropt earn= 'Diadora'    />
    </select>
 
    <Messagese message={'you select is brand of sneakers:' + pega} />
