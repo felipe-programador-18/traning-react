@@ -197,7 +197,7 @@ function App() {
     {value}
 
     <br></br>
-    <input type='password' name={name} onChange = { e => setname(e.target.value)} />
+    <input type='password' name={name} onChange = { e=> setname(e.target.value)} />
     {name}
 
 
