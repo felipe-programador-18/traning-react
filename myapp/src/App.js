@@ -126,7 +126,9 @@ function App() {
     }
 
     const decrement = () =>{
-      setvolta(Numvolta-1)
+      if(Numvolta >0){
+        setvolta(Numvolta-1)
+      }
     }
 
     const diminue = () =>{
@@ -251,8 +253,20 @@ function App() {
    <Messagese message={'you select is brand of sneakers:' + pega} />
    <Messagese message= {'i have thought about my life, i dont know your reasons and motivaties : ' +pega} />
 
-    </div>
 
+    <ol>
+    <li>Javascript</li>
+    <li>Typescript</li>
+    <li>React</li>
+    <li>nodejs</li>
+    <li>express.js</li>
+    <li>nest.js</li>
+    
+    </ol>
+
+
+    </div>
+    
     
   )
 
